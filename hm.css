@@ -1,272 +1,307 @@
-*{
-    margin: 0%;
-    padding: 0%;
+* {
+    margin: 0;
+    padding: 0;
     list-style: none;
     text-decoration: none;
+    box-sizing: border-box;
 }
 
-.header{
+nav {
     width: 100%;
     height: 80px;
-    display: block;
-    background-color: #0005;
+    background-color: rgb(39, 114, 175);
 }
 
-.inner_header{
-    width: 1000px;
-    height: 100%;
-    display: block;
-    margin: 0 auto;
-}
-   
-
-.logo_container{
-    height: 100%;
-    display: table;
-    float: left;
+label.logo {
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
 }
 
-.inner_header{
-    width: 1000px;
-    height: 100%;
-    display: block;
-    margin: 0 auto;
-}
-   
-
-.logo_container{
-    height: 100%;
-    display: table;
-    float: left;
-}
-.logo_container h1{
-    color: black;
-    height: 100%;
-    display: table-cell;
-    vertical-align: middle;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 37px;
-    font-weight: 100;
-}
-.navigation{
+nav ul {
     float: right;
-    height: 100%;
+    margin-right: 30%;
 }
 
-.navigation a{
-    height: 100%;
-    display: table;
-    float: left;
-    padding: 0px 30px;
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+    font-weight: bold;
 }
 
-.navigation a:last-child{
-    padding-right: 0;
+nav ul li a {
+    color: white;
+    font-size: 17px;
+    padding: 7px 13;
+    border-radius: 3px;
+    text-transform: uppercase;
 }
 
-.navigation a li{
-    
-    display: table-cell;
-    vertical-align: middle;
-    height: 100%;
-    color: black;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 18px;
-    transition: 0.8s all;
+.active ul:hover {
+    background: #f39d1a;
+    transition: .5s;
 }
 
-.navigation li:hover{
-    background-color: #f39d1a;
+.checkbtn {
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
 }
 
-.droneimg{
+#check {
+    display: none;
+}
+
+@media (max-width: 952px) {
+    label.logo {
+        font-size: 30px;
+        padding-left: 50px;
+    }
+    nav ul li a {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 858px) {
+    ul {
+        position: absolute;
+        top: 0.1%;
+        left: 54%;
+        color: teal;
+    }
+    nav ul li {
+        padding-right: 50px;
+    }
+    nav ul li a {
+        font-size: 20px;
+    }
+    .active ul:hover {
+        background-color: #0082e6;
+    }
+    #check:checked~ul {
+        left: 0;
+    }
+}
+
+.droneimg {
+    width: 370px;
+    height: +230px;
     position: absolute;
-    width: 470px;
-height: +330px;
-left: 750px;
-top: 140px;
+    top: 61%;
+    left: 5%;
 }
-.history{
+
+.history {
     position: absolute;
-    width: 620px;
-    height: 400px;
-    right: 650px;
-    top: 900px;
+    width: 370px;
+    height: 300px;
+    left: 5%;
+    top: 237%;
 }
-.morden-history{
+
+.morden-history {
     position: absolute;
-    width: 320px;
+    width: 350px;
     height: 450px;
-    right: 960px;
-    top: 1610px;
+    left: 5%;
+    top: 370%;
 }
-.anotomy{
-    position: absolute;
-    width: 430px;
-height: 470px;
-left: 860px;
-top: 140px;
-}
-.a1{
-    position: absolute;
-    width: 470px;
-height: 330px;
-left: 100px;
-top: 630px;   
-}
-.fl{
-    position: absolute;
-    width: 470px;
-height: 330px;
-left: 750px;
-top: 630px; 
-}
-.working{
-    position: absolute;
-    width: 470px;
-height: 330px;
-left: 840px;
-top: 1150px; 
-}
-.wk{
-    position: absolute;
-    width: 470px;
-height: 330px;
-left: 840px;
-top: 1600px; 
-}
-.use1{
+
+.anotomy {
     position: absolute;
     width: 360px;
-height: 280px;
-right: 930px;
-top: 3080px; 
+    height: 470px;
+    left: 2%;
+    top: 600px;
 }
-.use2{
-    position: absolute;
-    width: 360px;
-height: 280px;
-right: 500px;
-top: 3080px; 
-}
-.use3{
-    position: absolute;
-    width: 360px;
-height: 280px;
-right: 70px;
-top: 3080px; 
-}
-.multimot1{
-    position: absolute;
-    width: 380px;
-height: 200px;
-left: 60px;
-top: 510px;  
-}
-.multimot2{
-    position: absolute;
-    width: 380px;
-height: 200px;
-left: 474px;
-top: 510px;  
-}
-.fixedwing1{
-    position: absolute;
-    width: 380px;
-height: 200px;
-left: 60px;
-top: 1320px;  
-}
-.fixedwing2{
-    position: absolute;
-    width: 380px;
-height: 200px;
-left: 474px;
-top: 1320px;  
-}
-.singlerotor1{
-    position: absolute;
-    width: 380px;
-height: 200px;
-left: 60px;
-top: 2110px;  
-}
-.singlerotor2{
-    position: absolute;
-    width: 380px;
-height: 200px;
-left: 474px;
-top: 2110px; 
-}
-.hybrid2{
-    position: absolute;
-    width: 380px;
-height: 200px;
-left: 60px;
-top: 2780px;
-}
-.hybrid1{
-    position: absolute;
-    width: 380px;
-height: 200px;
-left: 474px;
-top: 2780px;
-}
-.volocoptor{
-    position: absolute;
-    width: 380px;
-height: 230px;
-left: 860px;
-top: 90px;
-}
-.hexacoptor{
-    position: absolute;
-    width: 380px;
-height: 230px;
-left: 860px;
-top: 360px;
-}
-.ppk{
-    position: absolute;
-    width: 380px;
-height: 230px;
-left: 880px;
-top: 90px;
-}
-.parrot{
-    position: absolute;
-    width: 380px;
-height: 230px;
-left: 880px;
-top: 370px;
-}
-.mono{
-    position: absolute;
-    width: 380px;
-height: 230px;
-left: 880px;
-top: 90px;
-}
-.hybrid{
-    position: absolute;
-    width: 380px;
-height: 230px;
-left: 880px;
-top: 370px;
-}
-.quan{
+
+.a1 {
     position: absolute;
     width: 400px;
-height: 250px;
-left: 900px;
-top: 100px;
+    height: 300px;
+    left: 2%;
+    top: 175%;
 }
-.crashed{
+
+.fl {
     position: absolute;
-    width: 800px;
-height: 430px;
-left: 50px;
-top: 160px;
+    width: 470px;
+    height: 330px;
+    left: 4%;
+    top: 160%;
 }
 
+.working {
+    position: absolute;
+    width: 400px;
+    height: 330px;
+    left: 3%;
+    top: 350%;
+}
 
+.wk {
+    position: absolute;
+    width: 470px;
+    height: 330px;
+    left: 840px;
+    top: 1600px;
+}
+
+.use1 {
+    position: absolute;
+    width: 360px;
+    height: 280px;
+    left: 4%;
+    top: 440%;
+}
+
+.use2 {
+    position: absolute;
+    width: 360px;
+    height: 280px;
+    left: 4%;
+    top: 400%;
+}
+
+.use3 {
+    position: absolute;
+    width: 360px;
+    height: 280px;
+    left: 4%;
+    top: 482%;
+}
+
+.multimot1 {
+    position: absolute;
+    width: 380px;
+    height: 200px;
+    left: 60px;
+    top: 510px;
+}
+
+.multimot2 {
+    position: absolute;
+    width: 380px;
+    height: 200px;
+    left: 474px;
+    top: 510px;
+}
+
+.fixedwing1 {
+    position: absolute;
+    width: 380px;
+    height: 200px;
+    left: 60px;
+    top: 1320px;
+}
+
+.fixedwing2 {
+    position: absolute;
+    width: 380px;
+    height: 200px;
+    left: 474px;
+    top: 1320px;
+}
+
+.singlerotor1 {
+    position: absolute;
+    width: 380px;
+    height: 200px;
+    left: 60px;
+    top: 2110px;
+}
+
+.singlerotor2 {
+    position: absolute;
+    width: 380px;
+    height: 200px;
+    left: 474px;
+    top: 2110px;
+}
+
+.hybrid2 {
+    position: absolute;
+    width: 380px;
+    height: 200px;
+    left: 60px;
+    top: 2780px;
+}
+
+.hybrid1 {
+    position: absolute;
+    width: 380px;
+    height: 200px;
+    left: 474px;
+    top: 2780px;
+}
+
+.volocoptor {
+    position: absolute;
+    width: 380px;
+    height: 230px;
+    left: 4%;
+    top: 20%;
+}
+
+.hexacoptor {
+    position: absolute;
+    width: 380px;
+    height: 230px;
+    left: 4%;
+    top: 114%;
+}
+
+.ppk {
+    position: absolute;
+    width: 380px;
+    height: 200px;
+    left: 4%;
+    top: 20%;
+}
+
+.parrot {
+    position: absolute;
+    width: 380px;
+    height: 200px;
+    left: 4%;
+    top: 110%;
+}
+
+.mono {
+    position: absolute;
+    width: 380px;
+    height: 230px;
+    left: 4%;
+    top: 20%;
+}
+
+.hybrid {
+    position: absolute;
+    width: 380px;
+    height: 230px;
+    left: 4%;
+    top: 114%;
+}
+
+.quan {
+    position: absolute;
+    width: 380px;
+    height: 250px;
+    left: 4%;
+    top: 23%;
+}
+
+.crashed {
+    position: absolute;
+    width: 380px;
+    height: 300px;
+    left: 4%;
+    top: 160px;
+}

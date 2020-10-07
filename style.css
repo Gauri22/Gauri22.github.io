@@ -1,96 +1,151 @@
 * {
-    margin: 0%;
-    padding: 0%;
+    margin: 0;
+    padding: 0;
     list-style: none;
     text-decoration: none;
+    box-sizing: border-box;
 }
 
-.header {
+nav {
     width: 100%;
     height: 80px;
-    display: block;
-    background-color: #0005;
+    background-color: rgb(39, 114, 175);
 }
 
-.inner_header {
-    width: 1000px;
-    height: 100%;
-    display: block;
-    margin: 0 auto;
-}
-
-.logo_container {
-    height: 100%;
-    display: table;
-    float: left;
-}
-
-.logo_container h1 {
+label.logo {
     color: white;
-    height: 100%;
-    display: table-cell;
-    vertical-align: middle;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 37px;
-    font-weight: 100;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
 }
 
-.logo_container h1 span {
-    font-weight: 900;
-}
-
-.navigation {
+nav ul {
     float: right;
-    height: 100%;
+    margin-right: 20px;
 }
 
-.navigation a {
-    height: 100%;
-    display: table;
-    float: left;
-    padding: 0px 30px;
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+    font-weight: bold;
 }
 
-.navigation a:last-child {
-    padding-right: 0;
-}
-
-.navigation a li {
-    display: table-cell;
-    vertical-align: middle;
-    height: 100%;
+nav ul li a {
     color: white;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 18px;
-    transition: 0.8s all;
+    font-size: 17px;
+    padding: 7px 13;
+    border-radius: 3px;
+    text-transform: uppercase;
 }
 
-.navigation li:hover {
-    background-color: f39d1a;
+.active ul:hover {
+    background: #f39d1a;
+    transition: .5s;
 }
 
-.my_button {
+.checkbtn {
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+@media (max-width: 952px) {
+    label.logo {
+        font-size: 30px;
+        padding-left: 50px;
+    }
+    nav ul li a {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 858px) {
+    .checkbtn {
+        display: block;
+    }
+    ul {
+        position: fixed;
+        width: 56.5vh;
+        height: 100vh;
+        background: #2c3e50;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li {
+        display: block;
+        margin: 50px;
+        line-height: 30px;
+    }
+    nav ul li a {
+        font-size: 20px;
+    }
+    .active ul:hover {
+        background-color: #0082e6;
+    }
+    #check:checked~ul {
+        left: 0;
+    }
+}
+
+section {
+    background: url(Drone-industry.jpg) no-repeat;
+    background-size: cover;
+    height: calc(100vh - 80px);
+    background-position: center;
+}
+
+.btn {
     width: 100px;
     height: 50px;
     font-size: 25px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: white;
     align-content: left;
     text-align: center;
     align-items: center;
     position: absolute;
     width: 200px;
     height: 55px;
-    left: 3%;
-    top: 445px;
-    background: #416AD3;
+    left: 25%;
+    top: 620px;
     border-radius: 7px;
-    transition: 6s;
     overflow: hidden;
+    color: #2c3e50;
 }
 
-.my_button:hover {
-    background-color: f39d1a;
+.btn:hover {
+    color: #2c3e50;
+    background: #2196f3;
+    box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
+}
+
+a span {
+    position: absolute;
+    display: block;
+}
+
+a span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: -o-linear-gradient(90deg, transparent, #2196f3);
+}
+
+a:hover span:nth-child(1) {
+    left: 100%;
+    transition: 1s;
 }
 
 .footer {
