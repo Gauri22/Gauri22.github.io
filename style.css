@@ -22,13 +22,13 @@ label.logo {
 
 nav ul {
     float: right;
-    margin-right: 20px;
+    margin-right: 80px;
 }
 
 nav ul li {
     display: inline-block;
     line-height: 80px;
-    margin: 0 5px;
+    margin: 0 7px;
     font-weight: bold;
 }
 
@@ -38,11 +38,11 @@ nav ul li a {
     padding: 7px 13;
     border-radius: 3px;
     text-transform: uppercase;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
-.active ul:hover {
-    background: #f39d1a;
-    transition: .5s;
+.active li:hover {
+    background-color: #f39d1a;
 }
 
 .checkbtn {
@@ -59,6 +59,72 @@ nav ul li a {
     display: none;
 }
 
+.my_button {
+    width: 100px;
+    height: 50px;
+    font-size: 25px;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    color: white;
+    align-content: left;
+    text-align: center;
+    align-items: center;
+    position: absolute;
+    width: 200px;
+    height: 55px;
+    left: 3%;
+    top: 445px;
+    background: #416ad3;
+    border-radius: 7px;
+    transition: 6s;
+    overflow: hidden;
+}
+
+.my_button:hover {
+    background-color: #f39d1a;
+}
+
+h1.text1 {
+    position: absolute;
+    top: 43%;
+    left: 3%;
+    transform: translateX();
+    text-align: left;
+    font-family: cursive;
+    display: block;
+    background-color: #0003;
+    border-radius: 5px;
+}
+
+h2.text2 {
+    position: absolute;
+    top: 51%;
+    left: 3%;
+    transform: translateX();
+    text-align: left;
+    font-family: cursive;
+    display: block;
+    background-color: #0003;
+    border-radius: 5px;
+}
+
+h1.text3 {
+    position: absolute;
+    top: 57%;
+    left: 3%;
+    transform: translateX();
+    text-align: left;
+    font-family: cursive;
+    display: block;
+    background-color: #0003;
+    border-radius: 5px;
+}
+
+@media (min-width: 1200px) {
+    .my_button {
+        display: block;
+    }
+}
+
 @media (max-width: 952px) {
     label.logo {
         font-size: 30px;
@@ -66,6 +132,64 @@ nav ul li a {
     }
     nav ul li a {
         font-size: 16px;
+    }
+    .my_button {
+        display: block;
+    }
+    .my_button {
+        width: 100px;
+        height: 50px;
+        font-size: 25px;
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+        color: white;
+        align-content: left;
+        text-align: center;
+        align-items: center;
+        position: absolute;
+        width: 200px;
+        height: 55px;
+        left: 3%;
+        top: 400px;
+        background: #416ad3;
+        border-radius: 7px;
+        transition: 6s;
+        overflow: hidden;
+    }
+    h1.text1 {
+        position: absolute;
+        top: 49%;
+        left: 3%;
+        transform: translateX();
+        text-align: left;
+        font-family: cursive;
+        display: block;
+        background-color: #0003;
+        border-radius: 5px;
+        font-size: 23px;
+    }
+    h2.text2 {
+        position: absolute;
+        top: 55%;
+        left: 3%;
+        transform: translateX();
+        text-align: left;
+        font-family: cursive;
+        display: block;
+        background-color: #0003;
+        border-radius: 5px;
+        font-size: 21px;
+    }
+    h1.text3 {
+        position: absolute;
+        top: 60.4%;
+        left: 3%;
+        transform: translateX();
+        text-align: left;
+        font-family: cursive;
+        display: block;
+        background-color: #0003;
+        border-radius: 5px;
+        font-size: 23px;
     }
 }
 
@@ -75,27 +199,46 @@ nav ul li a {
     }
     ul {
         position: fixed;
-        width: 56.5vh;
+        width: 100%;
         height: 100vh;
         background: #2c3e50;
         top: 80px;
         left: -100%;
         text-align: center;
-        transition: all .5s;
+        transition: all 0.5s;
     }
     nav ul li {
         display: block;
         margin: 50px;
-        line-height: 30px;
+        line-height: 20px;
     }
     nav ul li a {
         font-size: 20px;
     }
-    .active ul:hover {
+    .active li:hover {
         background-color: #0082e6;
     }
     #check:checked~ul {
         left: 0;
+    }
+    .my_button {
+        display: none;
+    }
+    h1.text1 {
+        display: none;
+    }
+    h2.text2 {
+        display: none;
+    }
+    h1.text3 {
+        display: none;
+    }
+    label.logo {
+        color: white;
+        font-size: 30px;
+        line-height: 80px;
+        padding: 0 40px;
+        font-weight: bold;
     }
 }
 
@@ -110,7 +253,7 @@ section {
     width: 100px;
     height: 50px;
     font-size: 25px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
     align-content: left;
     text-align: center;
     align-items: center;
@@ -118,7 +261,7 @@ section {
     width: 200px;
     height: 55px;
     left: 25%;
-    top: 620px;
+    top: 600px;
     border-radius: 7px;
     overflow: hidden;
     color: #2c3e50;
@@ -148,46 +291,12 @@ a:hover span:nth-child(1) {
     transition: 1s;
 }
 
-.footer {
-    position: absolute;
-    width: 132px;
-    height: 39px;
-    left: 947px;
-    top: 610px;
-    background: #0004;
-    border-radius: 16px;
-    transform: rotate(-0.5deg);
-    color: white;
-    font-size: 20px;
-}
-
-.footer:hover {
-    background-color: f39d1a;
-}
-
-.footer2 {
-    position: absolute;
-    width: 132px;
-    height: 39px;
-    left: 1124px;
-    top: 610px;
-    background: #0004;
-    border-radius: 16px;
-    transform: rotate(-0.5deg);
-    color: white;
-    font-size: 20px;
-}
-
-.footer2:hover {
-    background-color: f39d1a;
-}
-
 @viewport {
-    zoom: 1.0;
+    zoom: 1;
     width: extend-to-zoom;
 }
 
 @-ms-viewport {
     width: extend-to-zoom;
-    zoom: 1.0;
+    zoom: 1;
 }

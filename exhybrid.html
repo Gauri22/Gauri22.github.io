@@ -2,22 +2,69 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="hm.css" type="text/css">
+    <link rel="stylesheet" href="hm.css" type="text/css" />
+    <style>
+        .holdingcontainer {
+            width: 80vw;
+            height: auto;
+            display: flex;
+            background: rgba(221, 217, 217, 0.6);
+            box-sizing: border-box;
+            flex-direction: column;
+            margin: auto;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        
+        .intercontainer1 {
+            flex: 1;
+            background: white;
+            padding: 30px;
+            margin: 3px;
+        }
+        
+        .intercontainer2 {
+            flex: 1;
+            background: white;
+            padding: 30px;
+            margin: 3px;
+        }
+        
+        @media screen and (max-width: 768px) {
+            .holdingcontainer {
+                flex-direction: column;
+                font-size: 14px;
+                height: auto;
+                position: absolute;
+                width: auto;
+            }
+        }
+    </style>
 </head>
 
 <body>
-    <a href="difftypes.html">
-        <h1 style="text-decoration: underline;left: 4%;position: absolute;top: 5%;">Example of multirotor drone:</h1>
-    </a>
-    <h2 style="position: absolute;top: 17%;left: 4%;color: navy;">1.Quantix Recon drone-</h2>
-    <p style="position: absolute;top: 60%;left: 4%;color: black;font-size: 23px;">Quantix Recon features a hybrid VTOL (vertical takeoff and landing) design, combining the advantages of a multirotor drone with the range, speed and efficiency of a fixed-wing <br> unmanned aircraft. It can operate with full autonomy, surveying up
-        to 1.6 square kilometers (0.6 square miles), or 20 linear kilometers (12.4 miles) in one 45-minute flight. Users can choose between several different flight modes, including line (route), area and waypoint targeted data capture, and five flight
-        altitudes ranging from 150 feet to 800 feet. Aerial imagery can be further analysed with a wide variety of geographic information system (GIS) tools.</p>
-    <img class="quan" src="last.jpg" alt="Quantix recon drone">
-    <iframe style="position: absolute;top: 125%;left: 4%;" width="380" height="300" src="https://www.youtube.com/embed/khK2r7cOuvk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <div class="holdingcontainer">
+        <a href="difftypes.html">
+            <h1 style="text-decoration: underline; text-align: center">
+                Example of multirotor drone:
+            </h1>
+        </a>
+        <div class="intercontainer1">
+            <h2 style="color: navy">1.Quantix Recon drone-</h2>
+            <img class="quan" src="last.jpg" alt="Quantix recon drone" width="100%" />
+            <p style="color: black; font-size: 23px">
+                Quantix Recon features a hybrid VTOL (vertical takeoff and landing) design, combining the advantages of a multirotor drone with the range, speed and efficiency of a fixed-wing <br /> unmanned aircraft. It can operate with full autonomy,
+                surveying up to 1.6 square kilometers (0.6 square miles), or 20 linear kilometers (12.4 miles) in one 45-minute flight. Users can choose between several different flight modes, including line (route), area and waypoint targeted data capture,
+                and five flight altitudes ranging from 150 feet to 800 feet. Aerial imagery can be further analysed with a wide variety of geographic information system (GIS) tools.
+            </p>
+        </div>
+        <div class="intercontainer2">
+            <iframe width="100%" height="auto" src="https://www.youtube.com/embed/khK2r7cOuvk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
 </body>
 
 </html>

@@ -2,13 +2,87 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About</title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+
+    <style>
+        .wrapper {
+            width: 80vw;
+            height: auto;
+            display: flex;
+            background: #0009;
+            box-sizing: border-box;
+            flex-direction: row;
+            ;
+            margin: auto;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        
+        .cont1 {
+            flex: 1;
+            background: black;
+            padding: 30px;
+            margin: 3px;
+            color: whitesmoke;
+        }
+        
+        .cont2 {
+            flex: 1;
+            background: black;
+            padding: 30px;
+            margin: 3px;
+            color: whitesmoke;
+        }
+        
+        @media screen and (max-width: 768px) {
+            .holdingcontainer {
+                flex-direction: column;
+                font-size: 14px;
+                height: auto;
+                position: absolute;
+                width: auto;
+            }
+        }
+    </style>
 </head>
 
-<body bgcolor="#0004">
-    <h2 style="position: absolute;right: 3%;top: 20%;line-height: 40px;background-image: url(about.jpg);height: 382px;width: 380px;color: white;">Invented by Team 'c'chargers. <br> Address- Nagpur,Maharashtra <br> mob- 8600488870 <br> email- glyder@gmail.com</h2>
+<body>
+    <nav>
+        <label class="logo">Glyder</label>
+        <ul class="active">
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a href="Anotomy.html ">Anotomy</a>
+            </li>
+            <li>
+                <a href="difftypes.html ">Types</a>
+            </li>
+            <li>
+                <a href="repair.html ">Repair</a>
+            </li>
+            <li>
+                <a href="aboutus.html">About</a>
+            </li>
+            <li>
+                <a href="myform.html">Feedback</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="wrapper">
+        <div class="cont1">
+            <h1>About Me</h1>
+            <h3>My name is Gauri, i'm a student of Computer Application. Currently Working on small scale projects #full stack developer</h3>
+        </div>
+        <div class="cont2">
+            <h1>Contact details</h1>
+            <h3>Gauri Itankar <br> Near Iron bridge, sindi (rly)<br> Wardha, Maharashtra,442105 <br> 8600488870 <br> gauriitankar00@gmail.com
+        </div>
+    </div>
 
 </body>
 

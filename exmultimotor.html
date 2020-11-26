@@ -2,27 +2,84 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="hm.css" type="text/css">
+    <link rel="stylesheet" href="hm.css" type="text/css" />
+    <style>
+        .holdingcontainer {
+            width: 80vw;
+            height: auto;
+            display: flex;
+            background: rgba(221, 217, 217, 0.6);
+            box-sizing: border-box;
+            flex-direction: column;
+            margin: auto;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        
+        .intercontainer1 {
+            flex: 1;
+            background: white;
+            padding: 30px;
+            margin: 3px;
+        }
+        
+        .intercontainer2 {
+            flex: 1;
+            background: white;
+            padding: 30px;
+            margin: 3px;
+        }
+        
+        .intercontainer3 {
+            flex: 1;
+            background: white;
+            padding: 30px;
+            margin: 3px;
+        }
+        
+        @media screen and (max-width: 768px) {
+            .holdingcontainer {
+                flex-direction: column;
+                font-size: 14px;
+                height: auto;
+                position: absolute;
+                width: auto;
+            }
+        }
+    </style>
 </head>
 
 <body>
-    <a href="difftypes.html">
-        <h1 style="text-decoration: underline;left: 4%;position: absolute;top: 5%;">Example of multirotor drone:</h1>
-    </a>
-    <h2 style="position: absolute;top: 16%;left: 4%;color: navy;">1.Volocopter-</h2>
-    <p style="position: absolute;top: 54%;left: 4%;color: black;font-size: 23px;">international comapny designs - a series of German prototype electric multicopters with 16 rotors, the first electric multicopter in the world to achieve manned flight.[17][18] The large number of low-cost motors make it economical, quiet and provide
-        redundancy with ability to maintain control with up to four failed motors. World’s first manned flight with an electric multicopter. At the end of October 2011, Thomas Senkel of e-volo had completed a series of unmanned tests and was ready for
-        the first manned flight on an airstrip in Karlsruhe, Germany. The flight lasted one minute and 30 seconds.
-    </p>
-    <h2 style="position: absolute;top: 110%;left: 4%;color: navy;">2.Hexacoptor</h2>
-    <p style="position: absolute;top: 148%;left: 4%;color: black;font-size: 23px;">This strange looking contraption is a hexacopter, installed with a camera, which can be used for radio-controlled aerial cinematography and photography. In the background the Atacama Large Millimeter/submillimeter Array (ALMA) sprawls out across the
-        Chajnantor Plateau in Chile soon to be photographed from above. </p>
-    <img class="volocoptor" src="volocopt.jpg" alt="Volocopter">
-    <img class="hexacoptor" src="hexacopt.jpg" alt="hexacoptor">
-    <iframe style="position: absolute;top: 183%;left: 4%;" width="380" height="300" src="https://www.youtube.com/embed/J2vst0fOfd8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <div class="holdingcontainer">
+        <a href="difftypes.html">
+            <h1 style="text-decoration: underline; text-align: center">
+                Example of multirotor drone:
+            </h1>
+        </a>
+        <div class="intercontainer1">
+            <h2 style="color: navy">1.Volocopter-</h2>
+            <img class="volocoptor" src="volocopt.jpg" alt="Volocopter" width="100%" />
+            <p style="color: black; font-size: 23px">
+                international comapny designs - a series of German prototype electric multicopters with 16 rotors, the first electric multicopter in the world to achieve manned flight.[17][18] The large number of low-cost motors make it economical, quiet and provide
+                redundancy with ability to maintain control with up to four failed motors. World’s first manned flight with an electric multicopter. At the end of October 2011, Thomas Senkel of e-volo had completed a series of unmanned tests and was ready
+                for the first manned flight on an airstrip in Karlsruhe, Germany. The flight lasted one minute and 30 seconds.
+            </p>
+        </div>
+        <div class="intercontainer2">
+            <h2 style="color: navy">2.Hexacoptor</h2>
+            <img class="hexacoptor" src="hexacopt.jpg" alt="hexacoptor" width="100%" />
+            <p style="color: black; font-size: 23px">
+                This strange looking contraption is a hexacopter, installed with a camera, which can be used for radio-controlled aerial cinematography and photography. In the background the Atacama Large Millimeter/submillimeter Array (ALMA) sprawls out across the Chajnantor
+                Plateau in Chile soon to be photographed from above.
+            </p>
+        </div>
+        <div class="intercontainer3">
+            <iframe width="100%" height="auto" src="https://www.youtube.com/embed/J2vst0fOfd8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
 </body>
 
 </html>

@@ -1,45 +1,118 @@
-<html>
+<html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, intial-scale=1.0">
-    <title>
-        home
-    </title>
-    <link rel="stylesheet" href="hm.css" type="text/css">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, intial-scale=1.0" />
+    <title>home</title>
+    <link rel="stylesheet" href="hm.css" type="text/css" />
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-
+    <style>
+        .holdingcontainer {
+            width: 80vw;
+            height: auto;
+            display: flex;
+            background: rgba(221, 217, 217, 0.6);
+            box-sizing: border-box;
+            flex-direction: row;
+            margin: auto;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        
+        .intercontainerl {
+            flex: 1;
+            background: white;
+            padding: 30px;
+            margin: 3px;
+        }
+        
+        .intercontainerR {
+            flex: 1;
+            background: red;
+            padding: 30px;
+            margin: 3px;
+        }
+        
+        .intercontainerM {
+            flex: 1;
+            background: black;
+            color: wheat;
+            padding: 30px;
+            margin: 3px;
+        }
+        
+        @media screen and (max-width: 768px) {
+            .holdingcontainer {
+                flex-direction: column;
+                font-size: 14px;
+                height: auto;
+                position: absolute;
+                width: auto;
+            }
+        }
+    </style>
 </head>
 
 <body>
     <nav>
-
+        <input type="checkbox" id="check" />
+        <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
         <label class="logo">Glyder</label>
         <ul class="active">
             <li>
                 <a href="index.html">Home</a>
             </li>
+            <li>
+                <a href="Anotomy.html ">Anotomy</a>
+            </li>
+            <li>
+                <a href="difftypes.html ">Types</a>
+            </li>
+            <li>
+                <a href="repair.html ">Repair</a>
+            </li>
+            <li>
+                <a href="aboutus.html">About</a>
+            </li>
+            <li>
+                <a href="myform.html">Feedback</a>
+            </li>
         </ul>
     </nav>
-    <h1 style="position: absolute;top: 14%;left: 5%;color: black;text-decoration: underline;">What is Drone??</h1>
-    <h3 style="position: absolute;top: 20%;left: 5%;color: #0009;font-family: sans-serif;line-height: 27px;">A drone, in technological terms, is an unmanned aircraft. Drones are more formally known as unmanned aerial vehicles (UAVs) or unmanned aircraft systems (UASes). Essentially, a drone is a flying robot that can be remotely controlled or fly autonomously
-        through software-controlled flight plans in their embedded systems, working in conjunction with onboard sensors and GPS.</h3>
-    <img class="droneimg" src="template2.jpg" alt="droneimg">
-
-    <h1 style="position: absolute;top: 95%;left: 5%;color: black;text-decoration: underline;">Who invented drone?</h1><br>
-    <h3 style="position: absolute;top: 101%;left: 5%;color: #0009;font-family: sans-serif;line-height: 27px;">Reginald Denny and the Radioplane <br><br>The first large-scale production, purpose-built drone was the product of Reginald Denny. He served with the British Royal Flying Corps during World War I, and after the war, in 1919, emigrated to the United
-        States to seek his fortunes in Hollywood as an actor. Denny had made a name for himself as an actor, and between acting jobs, he pursued his interest in radio control model aircraft in the 1930s. He and his business partners formed "Reginald Denny
-        Industries" and opened a model plane shop in 1934 on Hollywood Boulevard known as "Reginald Denny Hobby Shops".<br><br>The shop evolved into the "Radioplane Company". Denny believed that low-cost RC aircraft would be very useful for training anti-aircraft
-        gunners, and in 1935 he demonstrated a prototype target drone, the RP-1, to the US Army. Denny then bought a design from Walter Righter in 1938 and began marketing it to hobbyists as the "Dennymite", and demonstrated it to the Army as the RP-2,
-        and after modifications as the RP-3 and RP-4 in 1939. In 1940, Denny and his partners won an Army contract for their radio controlled RP-4, which became the Radioplane OQ-2. They manufactured nearly fifteen thousand drones for the Army during
-        World War II. </h3>
-    <img class="history" src="history.jpg" alt="history">
-    <h1 style="position: absolute;top: 232%;left: 5%;color: black;text-decoration: underline;">The history of drones:</h1>
-    <h3 style="position: absolute;top: 280%;left: 5%;color: #0009;font-family: sans-serif;line-height: 27px;">Many trace the history of drones to 1849 Italy, when Venice was fighting for its independence from Austria. Austrian soldiers attacked Venice with hot-air, hydrogen- or helium-filled balloons equipped with bombs. <br>The first pilotless radio-controlled
-        aircraft were used in World War I. In 1918, the U.S. Army developed the experimental Kettering Bug, an unmanned "flying bomb" aircraft, which was never used in combat. <br><br>The first generally used drone appeared in 1935 as a full-size retooling
-        of the de Havilland DH82B "Queen Bee" biplane, which was fitted with a radio and servo-operated controls in the back seat. The plane could be conventionally piloted from the front seat, but generally it flew unmanned and was shot at by artillery
-        gunners in training. The term drone dates to this initial use, a play on the "Queen Bee" nomenclature.</h3><br><br>
-    <img class="morden-history" src="modernh.jpg" alt="morden">
+    <div class="holdingcontainer">
+        <div class="intercontainerl">
+            <h1 style="text-decoration: underline">What is Drone??</h1>
+            <img class="droneimg" src="template2.jpg" alt="droneimg" width="100%" />
+            <h3 style="font-family: sans-serif; line-height: 27px">
+                A drone, in technological terms, is an unmanned aircraft. Drones are more formally known as unmanned aerial vehicles (UAVs) or unmanned aircraft systems (UASes). Essentially, a drone is a flying robot that can be remotely controlled or fly autonomously
+                through software-controlled flight plans in their embedded systems, working in conjunction with onboard sensors and GPS.
+            </h3>
+        </div>
+        <div class="intercontainerR">
+            <h1 style="text-decoration: underline">Who invented drone?</h1>
+            <img class="history" src="history.jpg" alt="history" width="100%" />
+            <h3 style="font-family: sans-serif; line-height: 27px">
+                Reginald Denny and the Radioplane <br /><br />The first large-scale production, purpose-built drone was the product of Reginald Denny. He served with the British Royal Flying Corps during World War I, and after the war, in 1919, emigrated
+                to the United States to seek his fortunes in Hollywood as an actor. Denny had made a name for himself as an actor, and between acting jobs, he pursued his interest in radio control model aircraft in the 1930s. He and his business partners
+                formed "Reginald Denny Industries" and opened a model plane shop in 1934 on Hollywood Boulevard known as "Reginald Denny Hobby Shops".<br /><br />The shop evolved into the "Radioplane Company". Denny believed that low-cost RC aircraft
+                would be very useful for training anti-aircraft gunners, and in 1935 he demonstrated a prototype target drone, the RP-1, to the US Army. Denny then bought a design from Walter Righter in 1938 and began marketing it to hobbyists as the
+                "Dennymite", and demonstrated it to the Army as the RP-2, and after modifications as the RP-3 and RP-4 in 1939. In 1940, Denny and his partners won an Army contract for their radio controlled RP-4, which became the Radioplane OQ-2. They
+                manufactured nearly fifteen thousand drones for the Army during World War II.
+            </h3>
+        </div>
+        <div class="intercontainerM">
+            <h1 style="text-decoration: underline">The history of drones:</h1>
+            <img class="morden-history" src="modernh.jpg" alt="morden" width="100%" height="auto" />
+            <h3 style="font-family: sans-serif; line-height: 27px">
+                Many trace the history of drones to 1849 Italy, when Venice was fighting for its independence from Austria. Austrian soldiers attacked Venice with hot-air, hydrogen- or helium-filled balloons equipped with bombs.
+                <br />The first pilotless radio-controlled aircraft were used in World War I. In 1918, the U.S. Army developed the experimental Kettering Bug, an unmanned "flying bomb" aircraft, which was never used in combat. <br /><br />The first generally
+                used drone appeared in 1935 as a full-size retooling of the de Havilland DH82B "Queen Bee" biplane, which was fitted with a radio and servo-operated controls in the back seat. The plane could be conventionally piloted from the front seat,
+                but generally it flew unmanned and was shot at by artillery gunners in training. The term drone dates to this initial use, a play on the "Queen Bee" nomenclature.
+            </h3>
+        </div>
+    </div>
 </body>
 
 </html>

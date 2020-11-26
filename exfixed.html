@@ -2,29 +2,87 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="hm.css" type="text/css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>exfixed</title>
+    <link rel="stylesheet" href="hm.css" type="text/css" />
+    <style>
+        .holdingcontainer {
+            width: 80vw;
+            height: auto;
+            display: flex;
+            background: rgba(221, 217, 217, 0.6);
+            box-sizing: border-box;
+            flex-direction: column;
+            margin: auto;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        
+        .intercontainer1 {
+            flex: 1;
+            background: white;
+            padding: 30px;
+            margin: 3px;
+        }
+        
+        .intercontainer2 {
+            flex: 1;
+            background: white;
+            padding: 30px;
+            margin: 3px;
+        }
+        
+        .intercontainer3 {
+            flex: 1;
+            background: white;
+            padding: 30px;
+            margin: 3px;
+        }
+        
+        @media screen and (max-width: 768px) {
+            .holdingcontainer {
+                flex-direction: column;
+                font-size: 14px;
+                height: auto;
+                position: absolute;
+                width: auto;
+            }
+        }
+    </style>
 </head>
 
 <body>
-    <a href="difftypes.html">
-        <h1 style="text-decoration: underline;left: 4%;position: absolute;top: 5%;">Example of Fixed wing drone:</h1>
-    </a>
-    <h2 style="position: absolute;top: 15%;left: 4%;color: navy;">1.The wingtreOne PPK VTOL-</h2>
-    <p style="position: absolute;top: 50%;left: 4%;color: black;font-size: 23px;">The WingtraOne PPK VTOL is a fixed-wing, fully autonomous drone that has been specifically designed to cover long distances. It allows for a flight pre-plan due to its intelligent WingtraPilot software. The WingtraOne can automatically capture surveying
-        data at the touch of a button. The WingtraOne also has the impressive ability to set off vertically like a quadcopter, even on difficult terrain removing the need to launch or catapult the aircraft.It’s capable of flying for up to 55 minutes and
-        has been designed to cover long distances.
-    </p>
-    <h2 style="position: absolute;top: 104%;left: 4%;color: navy;">2.parrot disco fpv fixed wing drone- </h2>
-    <p style="position: absolute;top: 140%;left: 4%;color: black;font-size: 23px;">Parrot was an early pioneer of intelligent multirotor drones. The Parrot AR drone might seems positively primitive now, but at the time it was an amazing feat of consumer technology.The deal is made even sweeter with the inclusion of FPV goggles,
-        but you do need a smartphone to act as the screen. The Parrot Skycontroller 2 does duty as the transmitter and gives you a 1.2 mile rangeThat might sound like plenty, but given that the Disco will reach a whopping 50 mph , it could be out of range
-        in less than a minute if you floor it.Camera duties are performed by a 14 megapixel 1080p camera with a wide-angle lens .To top it off, it’s rated for 45 minutes of flight time.
-    </p>
-    <img class="ppk" src="ppk.jpg" alt="WingtraOne PPK VTOL">
-    <img class="parrot" src="parrot-disco-55261-_1_-edited.jpg" alt="parrot disco fpv fixed wing drone">
-    <iframe style="position: absolute;top: 206%;left: 4%;" width="380" height="300" src="https://www.youtube.com/embed/m1Fpq4inefg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <div class="holdingcontainer">
+        <a href="difftypes.html">
+            <h1 style="text-decoration: underline; padding: 0; text-align: center">
+                Example of Fixed wing drone:
+            </h1>
+        </a>
+        <div class="intercontainer1">
+            <h2 style="color: navy">1.The wingtreOne PPK VTOL-</h2>
+            <img class="ppk" src="ppk.jpg" alt="WingtraOne PPK VTOL" width="100%" />
+
+            <p style="color: black; font-size: 23px">
+                The WingtraOne PPK VTOL is a fixed-wing, fully autonomous drone that has been specifically designed to cover long distances. It allows for a flight pre-plan due to its intelligent WingtraPilot software. The WingtraOne can automatically capture surveying
+                data at the touch of a button. The WingtraOne also has the impressive ability to set off vertically like a quadcopter, even on difficult terrain removing the need to launch or catapult the aircraft.It’s capable of flying for up to 55 minutes
+                and has been designed to cover long distances.
+            </p>
+        </div>
+        <div class="intercontainer2">
+            <h2 style="color: navy">2.parrot disco fpv fixed wing drone-</h2>
+            <img class="parrot" src="parrot-disco-55261-_1_-edited.jpg" alt="parrot disco fpv fixed wing drone" width="100%" height="auto" />
+
+            <p style="color: black; font-size: 23px">
+                Parrot was an early pioneer of intelligent multirotor drones. The Parrot AR drone might seems positively primitive now, but at the time it was an amazing feat of consumer technology.The deal is made even sweeter with the inclusion of FPV goggles, but
+                you do need a smartphone to act as the screen. The Parrot Skycontroller 2 does duty as the transmitter and gives you a 1.2 mile rangeThat might sound like plenty, but given that the Disco will reach a whopping 50 mph , it could be out
+                of range in less than a minute if you floor it.Camera duties are performed by a 14 megapixel 1080p camera with a wide-angle lens .To top it off, it’s rated for 45 minutes of flight time.
+            </p>
+        </div>
+        <div class="intercontainer3">
+            <iframe width="100%" src="https://www.youtube.com/embed/m1Fpq4inefg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
 </body>
 
 </html>

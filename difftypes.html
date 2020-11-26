@@ -2,10 +2,62 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="hm.css" type="text/css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Difrrent|types</title>
+    <link rel="stylesheet" href="hm.css" type="text/css" />
+
+    <style>
+        .holdingcontainer {
+            width: 80vw;
+            height: auto;
+            display: flex;
+            background: rgba(221, 217, 217, 0.6);
+            box-sizing: border-box;
+            flex-direction: column;
+            margin: auto;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        
+        .intercontainer1 {
+            flex: 1;
+            background: white;
+            padding: 30px;
+            margin: 3px;
+        }
+        
+        .intercontainer2 {
+            flex: 1;
+            background: white;
+            padding: 30px;
+            margin: 3px;
+        }
+        
+        .intercontainer3 {
+            flex: 1;
+            background: white;
+            padding: 30px;
+            margin: 3px;
+        }
+        
+        .intercontainer4 {
+            flex: 1;
+            background: white;
+            padding: 30px;
+            margin: 3px;
+        }
+        
+        @media screen and (max-width: 768px) {
+            .holdingcontainer {
+                flex-direction: column;
+                font-size: 14px;
+                height: auto;
+                position: absolute;
+                width: auto;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -13,52 +65,87 @@
         <label class="logo">Glyder</label>
         <ul class="active">
             <li>
-                <a href="index.html">Types</a>
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a href="Anotomy.html ">Anotomy</a>
+            </li>
+            <li>
+                <a href="difftypes.html ">Types</a>
+            </li>
+            <li>
+                <a href="repair.html ">Repair</a>
+            </li>
+            <li>
+                <a href="aboutus.html">About</a>
+            </li>
+            <li>
+                <a href="myform.html">Feedback</a>
             </li>
         </ul>
     </nav>
-    <h1 style="top: 14%;left: 4%;position: absolute;text-decoration: underline;">Types of drones</h1>
-    <h2 style="position: absolute;top: 21%;left: 4%;color: navy;">1.Multiroter:</h2>
-    <p style="position: absolute;top: 26%;left: 4%;color: black;font-size: 23px;">*If you are looking to get a small camera in the air for a relatively short period of time, then a multirotor is the way to go. They give you much more control over positioning and framing the camera to get you that perfect aerial photo shot.<br><br>        *The financial barrier to entry in the multirotor market is low thanks to the advancement of cell phone technology that has allowed the price of drone components to become ignorantly smaller and cheaper. Out of the four types of drones that are
-        available, multirotors are the easiest to manufacture, and the most economical to fly. </p>
-
-    <a href="exmultimotor.html">
-        <h2 style="position: absolute;top: 110%;left: 4%;color: blue;text-decoration: underline;">Click here to know about the examples of Multimotor.</h2>
-    </a>
-    <h2 style="position: absolute;top: 121%;left: 4%;color: navy;">2.Fixed wing:</h2>
-    <p style="position: absolute;top: 128%;left: 4%;color: black; font-size: 23px;">*Fixed wing drones are one of the types of drones that use the same principle that airplanes use to generate lift using a wing instead of vertical thrust generating rotors. The vertical lift is generated as a consequence of the forward motion of the
-        wing through the air, making this a more efficient way of generating vertical lift.
-        <br> <br> *Fixed wing drones are able to traverse long distances, map wider areas, and stay within close proximity over points of interest. Along with the greater thrust generating efficiency, fixed wing drones are able to use gasoline powered
-        engines. Due to the energy density of this type of fuel, gas powered drones are able to stay in the air for over 15 hours.
-    </p>
-
-    <iframe style="position: absolute;top: 86%;left: 4%;" width="380" height="200" src="https://www.youtube.com/embed/VlyGUgLBNhs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    <iframe style="position: absolute;top: 200%;left: 4%;" width="380" height="200" src="https://www.youtube.com/embed/7RcDXgP6urU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    <a href="exfixed.html">
-        <h2 style="position: absolute;top: 229%;left: 4%;color: blue;text-decoration: underline;">Click here to know about examples of fixed drone.</h2>
-    </a>
-    <h2 style="position: absolute;top: 242%;left: 4%;color: navy;">3.Singl roter helicoptor:</h2>
-    <p style="position: absolute;top: 247%;left: 4%;color: black; font-size: 23px;">*A multi rotor uses a number of rotors to generate vertical, but a single rotor uses just one, along with a tail rotor to control the heading. Helicopters are very common in manned aviation, but are rarely used in the drone community. <br><br>*Single
-        rotor helicopter drones generate thrust more efficiently over multi-rotors, and can be powered by a gasoline engine for longer flight times. A larger rotor spinning slowly generates thrust more efficiently. This is why long endurance quadcopters
-        have a large propeller diameter. A single rotor helicopter with long blades is more like a rotating wing than a propeller. This results in the greater thrust generating efficiency.</p>
-
-    <iframe style="position: absolute;top: 317%;left: 4%;" width="380" height="200" src="https://www.youtube.com/embed/QWaWFyz7DHA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    <a href="exsinglerotor.html">
-        <h2 style="position: absolute;top: 346%;left: 4%;color: blue;text-decoration: underline;">Click here to know about the examples of single rotor helicoptor</h2>
-    </a>
-    <h2 style="position: absolute;top: 357%;left: 4%;color: navy;">4.Fixed wing hybride:</h2>
-    <p style="position: absolute;top: 362%;left: 4%;color: black; font-size: 23px;">*A new category of hybrid drones that can take off and land vertically are being developed. These merge the benefits of fixed wing UAVs with the ability to hover. <br><br>*Some of these hybrid drone concepts are essentially fixed wing designs with
-        a vertical lift motor. Other designs are tail sitting aircraft that point vertical for takeoff before pitching over to fly horizontally. Further designs feature the rotor or the entire wing with propellers can point upwards for takeoff, and horizontally
-        for forward flight. </p>
-
-    <iframe style="position: absolute;top: 415%; left: 4%;" width="380" height="200" src="https://www.youtube.com/embed/3Dr322mC_U4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    <a href="exhybrid.html">
-        <h2 style="position: absolute;top: 444%;left: 4%;color: blue;text-decoration: underline;">Click here to know about the examples of Fixed wing hybrid drone.</h2>
-    </a>
-
-
-
-
+    <div class="holdingcontainer">
+        <h1 style="text-decoration: underline; text-align: center">
+            Types of drones
+        </h1>
+        <div class="intercontainer1">
+            <h2 style="color: navy">1.Multiroter:</h2>
+            <p style="color: black; font-size: 23px">
+                *If you are looking to get a small camera in the air for a relatively short period of time, then a multirotor is the way to go. They give you much more control over positioning and framing the camera to get you that perfect aerial photo shot.<br
+                /><br /> *The financial barrier to entry in the multirotor market is low thanks to the advancement of cell phone technology that has allowed the price of drone components to become ignorantly smaller and cheaper. Out of the four types
+                of drones that are available, multirotors are the easiest to manufacture, and the most economical to fly.
+            </p>
+            <iframe width="100%" src="https://www.youtube.com/embed/VlyGUgLBNhs " frameborder="0 " allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture " allowfullscreen></iframe>
+            <a href="exmultimotor.html">
+                <h2 style="color: blue; text-decoration: underline">
+                    Click here to know about the examples of Multimotor.
+                </h2>
+            </a>
+        </div>
+        <div class="intercontainer2">
+            <h2 style="color: navy">2.Fixed wing:</h2>
+            <p style="color: black; font-size: 23px">
+                *Fixed wing drones are one of the types of drones that use the same principle that airplanes use to generate lift using a wing instead of vertical thrust generating rotors. The vertical lift is generated as a consequence of the forward motion of the wing
+                through the air, making this a more efficient way of generating vertical lift. <br />
+                <br /> *Fixed wing drones are able to traverse long distances, map wider areas, and stay within close proximity over points of interest. Along with the greater thrust generating efficiency, fixed wing drones are able to use gasoline powered
+                engines. Due to the energy density of this type of fuel, gas powered drones are able to stay in the air for over 15 hours.
+            </p>
+            <iframe width="100% " src="https://www.youtube.com/embed/7RcDXgP6urU " frameborder="0 " allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture " allowfullscreen></iframe>
+            <a href="exfixed.html ">
+                <h2 style="color: blue; text-decoration: underline">
+                    Click here to know about examples of fixed drone.
+                </h2>
+            </a>
+        </div>
+        <div class="intercontainer3">
+            <h2 style="color: navy">3.Singl roter helicoptor:</h2>
+            <p style="color: black; font-size: 23px">
+                *A multi rotor uses a number of rotors to generate vertical, but a single rotor uses just one, along with a tail rotor to control the heading. Helicopters are very common in manned aviation, but are rarely used in the drone community. <br
+                /><br />*Single rotor helicopter drones generate thrust more efficiently over multi-rotors, and can be powered by a gasoline engine for longer flight times. A larger rotor spinning slowly generates thrust more efficiently. This is why
+                long endurance quadcopters have a large propeller diameter. A single rotor helicopter with long blades is more like a rotating wing than a propeller. This results in the greater thrust generating efficiency.
+            </p>
+            <iframe width="100% " src="https://www.youtube.com/embed/QWaWFyz7DHA " frameborder="0 " allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture " allowfullscreen></iframe>
+            <a href="exsinglerotor.html ">
+                <h2 style="color: blue; text-decoration: underline">
+                    Click here to know about the examples of single rotor helicoptor
+                </h2>
+            </a>
+        </div>
+        <div class="intercontainer4">
+            <h2 style="color: navy">4.Fixed wing hybride:</h2>
+            <p style="color: black; font-size: 23px">
+                *A new category of hybrid drones that can take off and land vertically are being developed. These merge the benefits of fixed wing UAVs with the ability to hover. <br /><br />*Some of these hybrid drone concepts are essentially fixed wing
+                designs with a vertical lift motor. Other designs are tail sitting aircraft that point vertical for takeoff before pitching over to fly horizontally. Further designs feature the rotor or the entire wing with propellers can point upwards
+                for takeoff, and horizontally for forward flight.
+            </p>
+            <iframe width="100% " src="https://www.youtube.com/embed/3Dr322mC_U4 " frameborder="0 " allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture " allowfullscreen></iframe>
+            <a href="exhybrid.html ">
+                <h2 style="color: blue; text-decoration: underline">
+                    Click here to know about the examples of Fixed wing hybrid drone.
+                </h2>
+            </a>
+        </div>
+    </div>
 </body>
 
 </html>

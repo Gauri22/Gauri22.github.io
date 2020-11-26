@@ -2,10 +2,66 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width= , initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="hm.css" type="text/css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width= , initial-scale=1.0" />
+    <title>Anotomy</title>
+    <link rel="stylesheet" href="hm.css" type="text/css" />
+    <style>
+        .holdingcontainer {
+            width: 80vw;
+            height: auto;
+            display: flex;
+            background: rgba(221, 217, 217, 0.6);
+            box-sizing: border-box;
+            flex-direction: row;
+            margin: auto;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        
+        .intercontainer1 {
+            flex: 1;
+            background: cadetblue;
+            padding: 30px;
+            margin: 3px;
+            color: black;
+        }
+        
+        .intercontainer2 {
+            flex: 1;
+            background: cornflowerblue;
+            padding: 30px;
+            margin: 3px;
+        }
+        
+        .intercontainer3 {
+            flex: 1;
+            background: gray;
+            color: wheat;
+            padding: 30px;
+            margin: 3px;
+            color: black;
+        }
+        
+        .intercontainer4 {
+            flex: 1;
+            background: khaki;
+            color: wheat;
+            padding: 30px;
+            margin: 3px;
+            color: black;
+        }
+        
+        @media screen and (max-width: 768px) {
+            .holdingcontainer {
+                flex-direction: column;
+                font-size: 14px;
+                height: auto;
+                position: absolute;
+                width: auto;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -13,73 +69,95 @@
         <label class="logo">Glyder</label>
         <ul class="active">
             <li>
-                <a href="index.html">Anotomy</a>
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a href="Anotomy.html ">Anotomy</a>
+            </li>
+            <li>
+                <a href="difftypes.html ">Types</a>
+            </li>
+            <li>
+                <a href="repair.html ">Repair</a>
+            </li>
+            <li>
+                <a href="aboutus.html">About</a>
+            </li>
+            <li>
+                <a href="myform.html">Feedback</a>
             </li>
         </ul>
     </nav>
-    <img class="anotomy" src="anatomy.jpg" alt="Anotomy">
-
-    <h1 style="position: absolute;top: 15%;left: 4%;color: black;text-decoration: underline;">Anotomy of Drone:</h1><br>
-    <h2 style="position: absolute;top: 22%;left: 4%;color: rgb(6, 78, 107);font-family: sans-serif;"> Why is the anatomy of a drone required to be known?:-</h2>
-
-    <h3 style="position: absolute;top: 31%;left: 4%;color: #0009;font-family: sans-serif;line-height: 27px;">It is crucial to know about the parts of a drone because it will help you to assemble the drone perfectly. The drone will fly safely and run smooth. You will be able to fulfill the purpose of using the drone. You will have the idea about the inspection
-        of the various important components of the drone. If the drone is not functioning properly then also you will need the idea about the drone anatomy to understand what problem the drone is facing in its function. If there is any flying issue, you
-        w/ill be able to find out the actual problem behind the issue.</h3>
-    <img class="a1" src="a1.png" alt="a1">
-
-    <h2 style="position: absolute;top: 145%;left: 4%;color: rgb(6, 78, 107);font-family: sans-serif;">Different important components in drone parts:-</h2>
-    <ol style="position: absolute;top: 153%;left: 4%;color: #0009;font-family: sans-serif;line-height: 27px;font-size: 20px;list-style-type: circle;">
-        <li>
-            <h3>*Flight controller</h3>
-        </li>
-        <li>
-            <h3>*Motors</h3>
-        </li>
-        <li>
-            <h3>*Propellers</h3>
-        </li>
-        <li>
-            <h3>*Speed controllers</h3>
-        </li>
-        <li>
-            <h3>*Gimbal and the camera</h3>
-        </li>
-        <li>
-            <h3>*Battery</h3>
-        </li>
-    </ol>
-    <h3 style="position: absolute;top: 215%;left: 4%;color: #0009;font-family: sans-serif;"><a href="types.html" style="text-decoration: underline;">click here </a>to know more about Different parts of drone.</h3>
-
-
-    <h1 style="position: absolute;top: 225%;left: 4%;color: black;text-decoration: underline;">Working of drones:-</h1>
-    <h2 style="position: absolute;top: 232%;left: 4%;color: rgb(6, 78, 107);font-family: sans-serif;">Up, Up and Away: How Do Drones Work?</h2>
-    <h3 style="position: absolute;top: 240%;left: 4%;color: #0009;font-family: sans-serif;line-height: 27px;">Drones can be controlled remotely, often from a smartphone or tablet. Wireless connectivity lets pilots view the drone and its surroundings from a birds-eye perspective. Users can also leverage apps to pre-program specific GPS coordinates and create
-        an automated flight path for the drone. Another handy wirelessly-enabled feature is the ability to track battery charge in real time, an important consideration since drones use smaller batteries to keep their weight low. Rotors A drone relies
-        on rotors for its vertical motion. Drones use their rotors—which consist of a propeller attached to a motor—to hover, meaning the downward thrust of the drone is equal to the gravitational pull working against it; climb, when pilots increase the
-        speed until the rotors produce an upward force greater than gravity; and descend, when pilots perform the opposite and decrease speed. To hover, two of a drone’s four rotors move clockwise, while the other two move counterclockwise, ensuring that
-        the sideways momentum of the drone remains balanced. To avoid throwing its vertical motion off-kilter, the other two rotors on the drone will increase their spin. The same principle applies to movi- ng forward and backwards—the rotors of the drone
-        must apply thrust while making sure the spin of the rotors keeps the drone balanced.</h3>
-    <img class="working" src="Drone-working.jpg" alt="working">
-
-
-    <h1 style="position: absolute;top: 400%;left: 4%;color: black;text-decoration: underline;">Uses of drones</h1>
-    <h2 style="position: absolute;top: 406%;left: 4%;color: rgb(6, 78, 107);font-family: sans-serif;">*Remote sensing</h2>
-
-    <h2 style="position: absolute;top: 410%;left: 4%;color: rgb(6, 78, 107);font-family: sans-serif;">*Commercial aerial surveillance</h2>
-
-    <h2 style="position: absolute;top: 414%;left: 4%;color: rgb(6, 78, 107);font-family: sans-serif;">*Commercial and motion picture filmmaking</h2>
-
-    <h2 style="position: absolute;top: 422%;left: 4%;color: rgb(6, 78, 107);font-family: sans-serif;">*Oil, gas, and mineral exploration</h2>
-    <h2 style="position: absolute;top: 426%;left: 4%;color: rgb(6, 78, 107);font-family: sans-serif;">*Disaster relief</h2>
-
-    <h2 style="position: absolute;top: 430%;left: 4%;color: rgb(6, 78, 107);font-family: sans-serif;">*Real estate and construction</h2>
-
-    <h2 style="position: absolute;top: 434%;left: 4%;color: rgb(6, 78, 107);font-family: sans-serif;">*Recreational use</h2>
-
-    <h3 style="position: absolute;top: 525%;left: 4%;color: royalblue;font-family: sans-serif;"><a href="https://www.youtube.com/watch?v=bGdNzt3ddDs&feature=youtu.be">Click here to know more about the uses of drones.</a></h3>
-    <img class="use1" src="use3.png" alt="use1">
-    <img class="use3" src="drone-uses-709x381.jpg" alt="use3">
-
+    <div class="holdingcontainer">
+        <div class="intercontainer1">
+            <h1 style="text-decoration: underline">Anotomy of Drone:</h1>
+            <img class="anotomy" src="anatomy.jpg" alt="Anotomy" width="100%" />
+            <h2 style="color: black">
+                <br />Why is the anatomy of a drone required to be known?:-
+            </h2>
+            <h3 style="font-family: sans-serif; line-height: 27px">
+                <br />It is crucial to know about the parts of a drone because it will help you to assemble the drone perfectly. The drone will fly safely and run smooth. You will be able to fulfill the purpose of using the drone. You will have the idea
+                about the inspection of the various important components of the drone. If the drone is not functioning properly then also you will need the idea about the drone anatomy to understand what problem the drone is facing in its function. If
+                there is any flying issue, you w/ill be able to find out the actual problem behind the issue.
+            </h3>
+        </div>
+        <div class="intercontainer2">
+            <h2 style="text-decoration: underline">
+                Different important components in drone parts:-
+            </h2>
+            <img class="a1" src="a1.png" alt="a1" width="100%" />
+            <ol style="line-height: 27px; font-size: 20px; list-style-type: circle">
+                <li>
+                    <h3><br />*Flight controller</h3>
+                </li>
+                <li>
+                    <h3>*Motors</h3>
+                </li>
+                <li>
+                    <h3>*Propellers</h3>
+                </li>
+                <li>
+                    <h3>*Speed controllers</h3>
+                </li>
+                <li>
+                    <h3>*Gimbal and the camera</h3>
+                </li>
+                <li>
+                    <h3>*Battery</h3>
+                </li>
+            </ol>
+            <h3 style="font-family: sans-serif">
+                <a href="types.html" style="text-decoration: underline"><br />click here </a>to know more about Different parts of drone.
+            </h3>
+        </div>
+        <div class="intercontainer3">
+            <h1 style="text-decoration: underline">Working of drones:-</h1>
+            <img class="working" src="Drone-working.jpg" alt="working" width="100%" />
+            <h2 style="color: black; font-family: sans-serif">
+                <br />Up, Up and Away: How Do Drones Work?
+            </h2>
+            <h3 style="font-family: sans-serif; line-height: 27px">
+                <br /> *Drones can be controlled remotely, often from a smartphone or tablet. Wireless connectivity lets pilots view the drone and its surroundings from a birds-eye perspective. <br />Users can also leverage apps to pre-program specific
+                GPS coordinates and create an automated flight path for the drone. Another handy wirelessly-enabled feature is the ability to track battery charge in real time, an important consideration since drones use smaller batteries to keep their
+                weight low. <br />*Rotors A drone relies on rotors for its vertical motion. Drones use their rotors—which consist of a propeller attached to a motor—to hover, meaning the downward thrust of the drone is equal to the gravitational pull
+                working against it; climb, when pilots increase the speed until the rotors produce an upward force greater than gravity; and descend, when pilots perform the opposite and decrease speed. To hover, two of a drone’s four rotors move clockwise,
+                while the other two move counterclockwise, ensuring that the sideways momentum of the drone remains balanced. <br />*To avoid throwing its vertical motion off-kilter, the other two rotors on the drone will increase their spin. The same
+                principle applies to movi- ng forward and backwards—the rotors of the drone must apply thrust while making sure the spin of the rotors keeps the drone balanced.
+            </h3>
+        </div>
+        <div class="intercontainer4">
+            <h1 style="text-decoration: underline">Uses of drones</h1>
+            <img class="use1" src="use3.png" alt="use1" width="100%" />
+            <img class="use3" src="drone-uses-709x381.jpg" alt="use3" width="100%" />
+            <h2 style="line-height: 27px">
+                <br /> *Remote sensing <br />*Commercial aerial surveillance
+                <br />*Commercial and motion picture filmmaking <br />*Oil, gas, and mineral exploration <br />*Disaster relief<br />*Real estate and construction <br />*Recreational use
+            </h2>
+            <h3 style="color: royalblue; font-family: sans-serif">
+                <a href="https://www.youtube.com/watch?v=bGdNzt3ddDs&feature=youtu.be"><br />Click here to know more about the uses of drones.</a>
+            </h3>
+        </div>
+    </div>
 </body>
 
 </html>

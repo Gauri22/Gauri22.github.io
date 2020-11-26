@@ -22,13 +22,13 @@ label.logo {
 
 nav ul {
     float: right;
-    margin-right: 30%;
+    margin-right: 80px;
 }
 
 nav ul li {
     display: inline-block;
     line-height: 80px;
-    margin: 0 5px;
+    margin: 0 7px;
     font-weight: bold;
 }
 
@@ -38,11 +38,11 @@ nav ul li a {
     padding: 7px 13;
     border-radius: 3px;
     text-transform: uppercase;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
-.active ul:hover {
-    background: #f39d1a;
-    transition: .5s;
+.active li:hover {
+    background-color: #f39d1a;
 }
 
 .checkbtn {
@@ -69,239 +69,14 @@ nav ul li a {
     }
 }
 
-@media (max-width: 858px) {
-    ul {
-        position: absolute;
-        top: 0.1%;
-        left: 54%;
-        color: teal;
-    }
-    nav ul li {
-        padding-right: 50px;
-    }
-    nav ul li a {
-        font-size: 20px;
-    }
-    .active ul:hover {
-        background-color: #0082e6;
-    }
-    #check:checked~ul {
-        left: 0;
-    }
+@media (max-width: 858px) {}
+
+@viewport {
+    zoom: 1;
+    width: extend-to-zoom;
 }
 
-.droneimg {
-    width: 370px;
-    height: +230px;
-    position: absolute;
-    top: 61%;
-    left: 5%;
-}
-
-.history {
-    position: absolute;
-    width: 370px;
-    height: 300px;
-    left: 5%;
-    top: 237%;
-}
-
-.morden-history {
-    position: absolute;
-    width: 350px;
-    height: 450px;
-    left: 5%;
-    top: 370%;
-}
-
-.anotomy {
-    position: absolute;
-    width: 360px;
-    height: 470px;
-    left: 2%;
-    top: 600px;
-}
-
-.a1 {
-    position: absolute;
-    width: 400px;
-    height: 300px;
-    left: 2%;
-    top: 175%;
-}
-
-.fl {
-    position: absolute;
-    width: 470px;
-    height: 330px;
-    left: 4%;
-    top: 160%;
-}
-
-.working {
-    position: absolute;
-    width: 400px;
-    height: 330px;
-    left: 3%;
-    top: 350%;
-}
-
-.wk {
-    position: absolute;
-    width: 470px;
-    height: 330px;
-    left: 840px;
-    top: 1600px;
-}
-
-.use1 {
-    position: absolute;
-    width: 360px;
-    height: 280px;
-    left: 4%;
-    top: 440%;
-}
-
-.use2 {
-    position: absolute;
-    width: 360px;
-    height: 280px;
-    left: 4%;
-    top: 400%;
-}
-
-.use3 {
-    position: absolute;
-    width: 360px;
-    height: 280px;
-    left: 4%;
-    top: 482%;
-}
-
-.multimot1 {
-    position: absolute;
-    width: 380px;
-    height: 200px;
-    left: 60px;
-    top: 510px;
-}
-
-.multimot2 {
-    position: absolute;
-    width: 380px;
-    height: 200px;
-    left: 474px;
-    top: 510px;
-}
-
-.fixedwing1 {
-    position: absolute;
-    width: 380px;
-    height: 200px;
-    left: 60px;
-    top: 1320px;
-}
-
-.fixedwing2 {
-    position: absolute;
-    width: 380px;
-    height: 200px;
-    left: 474px;
-    top: 1320px;
-}
-
-.singlerotor1 {
-    position: absolute;
-    width: 380px;
-    height: 200px;
-    left: 60px;
-    top: 2110px;
-}
-
-.singlerotor2 {
-    position: absolute;
-    width: 380px;
-    height: 200px;
-    left: 474px;
-    top: 2110px;
-}
-
-.hybrid2 {
-    position: absolute;
-    width: 380px;
-    height: 200px;
-    left: 60px;
-    top: 2780px;
-}
-
-.hybrid1 {
-    position: absolute;
-    width: 380px;
-    height: 200px;
-    left: 474px;
-    top: 2780px;
-}
-
-.volocoptor {
-    position: absolute;
-    width: 380px;
-    height: 230px;
-    left: 4%;
-    top: 20%;
-}
-
-.hexacoptor {
-    position: absolute;
-    width: 380px;
-    height: 230px;
-    left: 4%;
-    top: 114%;
-}
-
-.ppk {
-    position: absolute;
-    width: 380px;
-    height: 200px;
-    left: 4%;
-    top: 20%;
-}
-
-.parrot {
-    position: absolute;
-    width: 380px;
-    height: 200px;
-    left: 4%;
-    top: 110%;
-}
-
-.mono {
-    position: absolute;
-    width: 380px;
-    height: 230px;
-    left: 4%;
-    top: 20%;
-}
-
-.hybrid {
-    position: absolute;
-    width: 380px;
-    height: 230px;
-    left: 4%;
-    top: 114%;
-}
-
-.quan {
-    position: absolute;
-    width: 380px;
-    height: 250px;
-    left: 4%;
-    top: 23%;
-}
-
-.crashed {
-    position: absolute;
-    width: 380px;
-    height: 300px;
-    left: 4%;
-    top: 160px;
+@-ms-viewport {
+    width: extend-to-zoom;
+    zoom: 1;
 }
